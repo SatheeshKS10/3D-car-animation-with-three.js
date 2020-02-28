@@ -64,16 +64,16 @@ function init(){
 	
 	
 	// sedan car is loaded here
-	// 
+	// https://satheeshks10.github.io/Three.js-basic3DObjCarModel/resources/script/mainScript.js
 	function loadSedan(){
 	var mtlLoader = new THREE.MTLLoader();
-	mtlLoader.setTexturePath('/resources/carModel/sedan/');
-	mtlLoader.setPath('/resources/carModel/sedan/');
+	mtlLoader.setTexturePath('Three.js-basic3DObjCarModel/resources/carModel/sedan/');
+	mtlLoader.setPath('Three.js-basic3DObjCarModel/resources/carModel/sedan/');
 	mtlLoader.load('sedan.mtl', function(materials) {
 
 		var objLoader = new THREE.OBJLoader();
 		objLoader.setMaterials(materials);
-		objLoader.setPath('/resources/carModel/sedan/');
+		objLoader.setPath('Three.js-basic3DObjCarModel/resources/carModel/sedan/');
 			objLoader.load('sedan.obj', function(sedan) {
 				    sedan.scale.y = sedan.scale.x = sedan.scale.z = 50;
 			    	//position values
