@@ -68,12 +68,12 @@ function init(){
 	function loadSedan(){
 	var mtlLoader = new THREE.MTLLoader();
 	//mtlLoader.setTexturePath('Three.js-basic3DObjCarModel/resources/carModel/sedan/');
-	mtlLoader.setPath('/Three.js-basic3DObjCarModel/resources/carModel/sedan/');
+	mtlLoader.setPath('/3D-car-animation-with-three.js/resources/carModel/sedan/');
 	mtlLoader.load('sedan.mtl', function(materials) {
 
 		var objLoader = new THREE.OBJLoader();
 		objLoader.setMaterials(materials);
-		objLoader.setPath('/Three.js-basic3DObjCarModel/resources/carModel/sedan/');
+		objLoader.setPath('/3D-car-animation-with-three.js/resources/carModel/sedan/');
 			objLoader.load('sedan.obj', function(sedan) {
 				    sedan.scale.y = sedan.scale.x = sedan.scale.z = 50;
 			    	//position values
